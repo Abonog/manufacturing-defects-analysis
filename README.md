@@ -4,7 +4,7 @@ An end-to-end analysis of 3,240 manufacturing production records in two parts: *
 
 I'm a Quality Engineer in the automotive industry moving into quality data analytics. This project applies the questions I'd ask on the shop floor to a public dataset, using SQL and Python instead of manual analysis.
 
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
 ---
 
@@ -51,9 +51,8 @@ sql/
   09_label_consistency.sql  does the label match the defect rate?
 python/
   manufacturing_defects_analysis.ipynb   questions 1-8, with outputs
-images/                     charts used in this README
-presentation/               stakeholder deck (PowerPoint)
 data/                       download instructions for the CSV
+*.png                       charts used in this README
 ```
 
 **To run:** download the CSV into `data/`. For SQL, run `00_setup.sql` in MySQL (update the CSV path), then any numbered file. For Python, `pip install -r requirements.txt` and open the notebook from the `python/` folder.
@@ -88,7 +87,7 @@ data/                       download instructions for the CSV
 | 7 | Decision tree | Independently found the same four rules (10.5 / 2.99 / 74.88 / 802). Same 95.5% test accuracy as the hand-built rule. |
 | 8 | Dashboard | Four panels, each titled with its conclusion (shown at the top of this page). |
 
-![Maintenance tipping point](images/maintenance_tipping_point.png)
+![Maintenance tipping point](maintenance_tipping_point.png)
 
 ## What this means for the Director
 
